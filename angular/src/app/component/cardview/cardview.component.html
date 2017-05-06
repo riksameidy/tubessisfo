@@ -1,0 +1,9 @@
+<div class="card">
+  <img src={{product.picture}} alt="Avatar" style="width:100%;height:150px" align="center">
+  <div class="container">
+    <h4><b>{{product.name}}</b></h4>
+    <p>{{productCategory}}</p>
+    <p>  <del> Rp{{hitunghargaasli(product.price)}}</del> <b>Rp{{hitunghargaasli(hitunghargadiscount())}} </b></p>
+    <p> <i>Berlaku hingga {{changeFormat()}} </i> </p>
+  </div>
+</div>

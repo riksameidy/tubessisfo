@@ -1,0 +1,12 @@
+  <div class="containerz"><br>
+  <h1>Product<br>___</h1>
+  <br><br>
+  <ul>
+
+    <li *ngFor = "let prod of products| datePipe:prod">
+      <app-cardview [product] = prod  [productCategory]= index(prod.category) ></app-cardview>
+    </li>
+  </ul>
+</div>
+<br><br>
+<app-footer> </app-footer>

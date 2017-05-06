@@ -1,0 +1,23 @@
+h1{
+  text-align: center;
+  margin: 0;
+}
+
+div{
+  padding: 20px;
+  margin-bottom: 2%;
+
+}
+
+.container{
+  background-color: rgb(244, 221, 184);
+}
+
+.our-brand{
+  background-color: #FFFFFF;
+  margin-bottom: 0;
+}
+
+.logo_yogya{
+  text-align: center;
+}

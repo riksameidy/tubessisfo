@@ -45,9 +45,7 @@ function toProduct(r:any):Product{
   category : r.category
   });
   console.log('parsed product ',product);
-  let per = new Date(product.period);
-  let d = new Date();
-  product.expired = per > d;
+  
   return product;
 
 

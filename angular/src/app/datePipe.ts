@@ -1,13 +1,21 @@
-import {Pipe} from '@angular/core'
+import {Pipe,PipeTransform} from '@angular/core'
 
 @Pipe({
   name:'datePipe'
 })
 
-export class datePipe{
-  transform(value,args?){
+export class datePipe implements PipeTransform {
+  transform(value, args?) {
+  let prod = args;
+  if(prod==-1){
+    return value;
+  }
+  else{
     return value.filter(product => {
-      return product.expired==true;
+    return product.category ==prod;
     });
   }
+
+  }
+
 }

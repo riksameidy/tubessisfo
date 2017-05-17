@@ -14,7 +14,8 @@ export class ProductComponent implements OnInit {
 
   productCategories : ProductCategory[] = [];
   products : Product[] = [];
-
+  produks: Product[] = [];
+  selected=-1;
 
   constructor(private _ProductCategoryService: ProductCategoryService, private _ProductService:ProductService) { }
 
@@ -34,6 +35,16 @@ export class ProductComponent implements OnInit {
     if(idx!=-1)
     return this.productCategories[idx].name;
   }
+
+  filterz(categoryid,id){
+    console.log(categoryid);
+    if(categoryid==undefined){
+      return true;
+    }
+    return categoryid==id;
+  }
+
+
 
 
 }

@@ -1,10 +1,17 @@
   <div class="containerz"><br>
   <h1>Product<br>___</h1>
   <br><br>
-  <ul>
+  <div>
+    <select #prodcat [(ngModel)] = "selected">
+      <option [value]="cate.id" *ngFor = "let cate of productCategories">{{cate.name}}</option>
+    </select>
+  </div>
 
-    <li *ngFor = "let prod of products| datePipe:prod">
-      <app-cardview [product] = prod  [productCategory]= index(prod.category) ></app-cardview>
+  <ul>
+    <li *ngFor = "let prod of products| datePipe:selected">
+      <app-cardview [product] = prod  [productCategory]= index(prod.category) >
+
+      </app-cardview>
     </li>
   </ul>
 </div>

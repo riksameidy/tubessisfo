@@ -1,9 +1,17 @@
 <div class="containerz">
 <br>
   <h1>Event<br>___</h1>
+
+  <div>
+     <label>Pilih Periode Event</label>
+      <select #prodcat [(ngModel)] = "selected">
+      <option [value]="cate" *ngFor = "let cate of periodes">{{changeToMonth(cate)}}</option>
+    </select>
+  </div>
   <ul>
-    <li *ngFor = "let ev of events">
+    <li *ngFor = "let ev of events| datePipe0:selected">
       <app-cardview-event [event] = ev  ></app-cardview-event>
+
     </li>
   </ul>
 </div>

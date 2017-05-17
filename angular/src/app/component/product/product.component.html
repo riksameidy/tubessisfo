@@ -2,7 +2,7 @@
   <h1>Product<br>___</h1>
   <br><br>
   <div>
-    <select #prodcat [(ngModel)] = "selected">
+     <label>Pilih Kategori Produk</label> <select #prodcat [(ngModel)] = "selected">
       <option [value]="cate.id" *ngFor = "let cate of productCategories">{{cate.name}}</option>
     </select>
   </div>

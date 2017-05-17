@@ -16,6 +16,7 @@ import { SignupComponent } from './component/signup/signup.component';
 import { CardviewComponent } from './component/cardview/cardview.component';
 import {Now} from './now'
 import {datePipe} from './datePipe';
+import {datePipe0} from './datePipe0';
 import { CardviewEventComponent } from './component/cardview-event/cardview-event.component';
 import { FooterComponent } from './component/footer/footer.component';
 
@@ -44,6 +45,7 @@ const appRoutes :Routes = [
     SignupComponent,
     CardviewComponent,
     datePipe,
+    datePipe0,
     Now,
     CardviewEventComponent,
     FooterComponent,
